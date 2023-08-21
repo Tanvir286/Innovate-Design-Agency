@@ -1,0 +1,699 @@
+/*=========== Common Css Start =================*/
+
+*{
+    margin: 0;
+    padding:0; 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+
+/*=============== Common Css end =====================*/
+
+/* ============Short Cut Area============= */
+
+.pop{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nuni{
+    font-family: 'Nunito', sans-serif;
+}
+
+.open{
+    font-family: 'Open Sans', sans-serif;
+}
+/* --------------------------------------------- */
+
+.font-18{
+    font-size:18px;
+}
+
+.font-20{
+    font-size:20px;
+}
+
+.font-28{
+    font-size:28px;
+}
+
+.font-36{
+    font-size:36px;
+}
+
+.font-40{
+    font-size:40px;
+}
+
+.font-48{
+    font-size:48px;
+}
+
+.font-64{
+    font-size:64px;
+}
+
+/* --------------------------------------------- */
+
+.font-regular{
+    font-weight: 400;
+}
+
+.font-medium{
+    font-weight: 500;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+/*============= Short Cut Area=================*/
+/* ===========Navbar Area Start ==================*/
+
+nav{
+    width: 100%;
+    position: absolute;
+    top:25px;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-part{
+    display: flex;
+}
+
+.logo{
+    width:20%;
+}
+
+.menu{
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu ul li a{
+ text-transform: capitalize;
+ color: #29313D;
+}
+
+
+.menu ul li i{
+    margin-left: 14px;
+}
+
+
+
+.menu-button{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:20%;
+}
+
+.menu-button a{
+   background:#FF5538 ;
+   padding:14px 28px;
+   color:#fff;
+   border-radius: 18px;
+   text-transform: capitalize;
+   transition: .5s;
+   border:1px solid  transparent ;
+}
+
+  .menu-button a:hover{
+    background:transparent ;
+    color:#FF5538;
+    border-color:#FF5538 ;
+ }  
+ 
+/* =========== Navbar Area End ==================*/
+/*============= Banner Area Start=================*/
+
+#banner{
+    background: url(../images/banner.png) center no-repeat;
+    background-size:cover;
+    position: relative;
+    padding: 300px 0;
+}
+
+#banner .rounded-shape {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 825px;
+    animation:rotate 5s infinite linear;
+}
+
+#banner .rounded-shape .inner-shape{
+    width: 20px;
+    height: 20px;
+    background:#FFABBA ;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#banner .dot {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 367px;
+    animation:tt 5s infinite linear alternate;
+}
+
+@keyframes tt {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+#banner .dot1 {
+    color: #C087EE;
+    position: absolute;
+    top: 272px;
+    right: 400px;
+    animation:rotate 5s infinite linear;
+}
+
+#banner .dot2 {
+    color: #C087EE;
+    position: absolute;
+    top: 272px;
+    left: 400px;
+    animation:rotate 5s infinite linear;
+}
+
+
+#banner h1{
+    color: #29313D;
+    width: 771px;
+    text-align: center;
+    margin:0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+#banner p{
+    color: #29313D;
+    width: 547px;
+    text-align: center;
+    margin:0 auto;
+    margin-top:24px;
+    margin-bottom: 40px;
+  }
+
+  .banner-button {
+    text-align: center;
+ }  
+
+  .banner-button a{
+    background:#FF5538 ;
+    padding:14px 28px;
+    color:#fff;
+    border-radius: 18px;
+    text-transform: capitalize;
+    margin:0 12px;
+    transition: .5s;
+    border:1px solid  transparent ;
+ }  
+
+  .banner-button a:hover{
+    background:transparent ;
+    color:#FF5538;
+    border-color:#FF5538 ;
+ }  
+
+
+
+ /* =========== Banner Area End ==================*/
+/*============= Service Area Start=================*/
+
+#service .box{
+    display:flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+
+#service .item{
+    width: 32%;
+    background: #fff;
+    box-shadow: 0px 10px 104px -8px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    padding: 30px 28px;
+}
+ 
+#service .item h3{
+    color:#29313D;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+#service .item p{
+    color:#29313D; 
+}
+
+
+
+/*============= Service Area End=================*/
+ /*============= Work Area Start =================*/
+
+#work{
+    position: relative;
+    margin-top: 80px;
+}
+
+#work .shape-work {
+	position: absolute;
+	top: -218px;
+	left: -10px;
+	z-index: -5;
+}
+
+
+
+ #work .header-part{
+     display: flex;  
+ }
+ 
+ #work .header-part .text{
+     width: 80%;  
+ }
+ 
+ #work .header-part .button-1{
+     width: 20%;  
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+
+ #work .header-part h4{
+    text-transform: capitalize;
+    color: #FF5538;
+}
+
+#work .header-part h2{
+    margin-top: 10px;
+    width: 693px;
+    text-transform: capitalize;
+    color: #29313D;
+    line-height: 140%;
+    margin-bottom: 60px;
+}
+
+
+#work .button-1 a{
+    background:transparent ;
+    padding:14px 28px;
+    color:#FF5538;
+    border-radius: 18px;
+    text-transform: capitalize;
+    margin:0 12px;
+    transition: .5s;
+    border:1px solid #FF5538  ;
+ }  
+
+ #work .button-1 a:hover{
+    background:#FF5538 ; 
+    color:#fff;   
+    border-color:transparent ;
+ }
+
+
+#work .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ #work .small-item{
+    width: 40%;
+    position: relative;
+    margin-bottom: 30px;
+ }
+
+ #work img{
+    width:100%;
+    height: 332px;
+ }
+
+ #work  .small-item .text-box{
+    width:100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    transition: .5s;
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
+ } 
+
+
+ #work  .large-item .text-box{
+    width:100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    transition: .5s;
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
+ } 
+
+#work .small-item:hover .text-box{
+    opacity: 1;
+}
+
+ #work .large-item:hover .text-box{
+    opacity: 1;
+ }
+
+ #work .small-item .text-box h4{
+    color: #29313D;
+ }
+
+
+ #work .small-item .text-box a{
+    color: #FF5538;
+
+ }
+
+
+ #work .large-item{
+    width: 58%;
+    position: relative;
+    margin-bottom: 30px;
+ }
+
+ /* =========== Work Area End ==================*/
+ /*============= Counting Area Start =================*/
+
+ #counting{
+    background: url(../images/count.png) no-repeat center;
+    /* width: 100%; */
+    background-size: cover;
+    padding: 120px 0;
+ }
+
+#counting .box-22{
+    display: flex;
+} 
+
+#counting .box-22 .left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+} 
+
+#counting .box-22 .left .item{
+    width: 47%;
+    background: #fff;
+    text-align: center;
+    padding: 74px 0;
+}
+
+#counting .box-22 .right{
+    width: 50%;
+    height: 200px;
+    padding-left: 100px;
+    box-sizing: border-box;
+} 
+
+
+#counting .box-22 .right h2{
+    width: 570px;
+} 
+
+#counting .box-22 .right p{
+    width: 530px;
+    line-height: 200%;
+} 
+
+#counting .box-22 .right a{
+    background:#FF5538 ;
+    padding:14px 28px;
+    color:#fff;
+    border-radius: 18px;
+    text-transform: capitalize;
+    transition: .5s;
+    border:1px solid  transparent ;
+    margin-top: 20px;
+} 
+
+
+#counting .box-22 .right a:hover{
+     background:transparent ;
+     color:#FF5538;
+     border-color:#FF5538 ;
+} 
+
+ /* =========== Counting Area End ==================*/
+ /*============= Global Area Start =================*/
+
+#global {
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#global h2{
+    width: 849px;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 30px;
+ }
+
+#global .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========== Global Area End ==================*/
+/*============= Customer Area Start =================*/
+
+ #customer{
+    background: url(../images/customer1.png) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    padding: 139px 0; 
+ }
+
+ #customer .box{
+    display: flex;
+ }
+ 
+ #customer .box .left{
+    width: 50%;
+ }
+
+ #customer .box .left p{
+    width: 630px;
+    line-height: 180%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
+
+ #customer .box .left .imgbox{ 
+    display: flex;
+    column-gap: 28px;
+    margin-top: 50px;
+ }
+
+ #customer .box .right{
+    width: 50%;
+    text-align: center;
+ }
+
+  
+ #customer .part3{
+    position: relative;
+ }
+
+ #customer .three {
+	position: absolute;
+	top: 0px;
+	left: 209px;
+}
+
+#customer .four {
+	position: absolute;
+	top: 0;
+	right: 328px;
+}
+
+/*============= Customer Area End =================*/
+/* =========== Project Area Start ==================*/
+
+#project{
+    background: url(../images/project.png) no-repeat center;
+    /* width: 100%; */
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+#project .header-part{
+    display: flex;  
+    border-bottom: 1px solid #29313D;
+}
+
+#project .header-part .text{
+    width: 80%;  
+}
+
+#project .header-part .button-1{
+    width: 20%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project .header-part h4{
+   text-transform: capitalize;
+   color: #FF5538;
+}
+
+#project .header-part h2{
+   margin-top: 10px;
+   width: 693px;
+   text-transform: capitalize;
+   color: #29313D;
+   line-height: 140%;
+   margin-bottom:48px;
+}
+
+
+#project .button-1 a{
+   background:transparent ;
+   padding:14px 28px;
+   color:#FF5538;
+   border-radius: 18px;
+   text-transform: capitalize;
+   margin:0 12px;
+   transition: .5s;
+   border:1px solid #FF5538  ;
+}  
+
+#project .button-1 a:hover{
+   background:#FF5538 ; 
+   color:#fff;   
+   border-color:transparent ;
+}
+
+#project p{
+    padding-top: 20px;
+    width: 1150px;
+    color: #29313D;
+    line-height: 180%;
+}
+
+/*============= Project Area End =================*/
+/* =========== Fotter Area Start ==================*/
+
+#footers{
+    padding-top: 106px;
+}
+
+
+#footers  .box{
+    display: flex;
+    column-gap: 100px;
+}
+
+#footers .left{
+    width: 30%;
+} 
+
+#footers .left p{
+    color: #29313D;
+    width: 449px;
+    margin-top: 44px;
+    margin-bottom: 100px;
+}
+
+
+
+#footers  .right{
+   width: 68%;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+#footers  .right .item1{
+    width: 32%;
+    text-align: center;
+}
+
+#footers  .right .item1 h4{
+    color: #29313D;
+    padding-bottom: 20px;
+}
+
+
+#footers .bottom-footer{
+    display: flex;
+}
+
+#footers  .right .item1 ul li a{
+     color: #29313D;
+     padding-bottom: 10px;
+}
+
+#footers .bottom-footer .zero {
+	display: flex;
+	margin-right: 759px;
+    margin-bottom: 50px;
+}
+
+
+
+
